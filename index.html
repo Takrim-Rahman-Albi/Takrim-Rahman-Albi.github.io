@@ -11,10 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/development_projects.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link
         href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
@@ -23,8 +24,8 @@
     <link href="css/clean-blog.min.css" rel="stylesheet">
     <link href="css/clean-blog.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
 
 
 </head>
@@ -82,13 +83,16 @@
                     <a class="nav-link" href="#education">Education</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#research_experience">Research Experience</a>
+                    <a class="nav-link" href="#research_experience">Research</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">AI Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#experience">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#development">Development</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#skills">Skills</a>
@@ -151,7 +155,7 @@
                         I am an enthusiastic Data Scientist who loves to explore the domain of AI as well as the recent trends. 
                         My research interest primarily comprises of Computer Vision and Human Computer Interaction. However, 
                         scrutinizing the recent technologies regarding Blockchain and Quantum Computing is also another realm of my passion. 
-                        On the other hand I work as a full stack web developer using the Django framework as well as php.
+                        On the other hand I work as a full stack web developer.
                     </p>
                 </div>
             </div>
@@ -392,80 +396,283 @@
     </div>
 </div>
 
+    <!--  Very Important  -->
+    <!-- <div id="development" class="background-alt">
+        <h2 class="heading">Development</h2>
+        <div id="container">
     
-    <!-- <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
+            <div id="row list-container">
+    
+    
+                <div class='list background-alt'>
+    
+                    <div class="project shadow-large item_dev">
+                        <div class="project-image">
+                            <img src="AI_project_images/chatbot-3589528_1920.jpg" width="400px" />
+                        </div>
+    
+    
+                        <div style="padding:10px ;">
+                            <h3>iDesk360 - Customer support system | Social media management tool</h3>
+                            <p>
+                                In this project my primary task was to generate a dialogue between two bots by feeding
+                                conversations to the Reformer model and thus it will learn how to understand the
+                                context of each one. Not only will it learn how to answer questions but it will also know
+                                how to ask questions if it needs more info. I preprocessed the MultiWoz dataset
+                                for Reformer inputs and fed it into the pre-trained Reformer Model
+                            </p>
+                            <a href="https://github.com/Alvi-Rahman/Natural-Language-Processing-Specialization/blob/master/4.%20Natural%20Language%20Processing%20with%20Attention%20Models/Week%204/Building%20Chatbots.ipynb"
+                                target="_blank">View Project</a>
+                        </div>
+    
                     </div>
-                    
-                    <div>
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
+                    <div class="project shadow-large item_dev">
+                        <div class="project-image">
+                            <img src="AI_project_images/jazz.jpg" width="420px" />
+                        </div>
+    
+                        <div style="padding:10px ;">
+                            <h3>GSMRiders.com - Smart phone review, news, rumors</h3>
+                            <p>
+                                Training an DJ Model (LSTM Network) on a given dataset provided bt DeepLearning.ai. The task
+                                primarily involved preparing the training inputs and
+                                feeding it into the LSTM model. There were 78 unique values(notes) used to train and build
+                                the model.
+                            </p>
+                            <a href="https://github.com/Alvi-Rahman/Deep-Learning-Coursera---deeplearning.ai/blob/master/5.%20Sequence%20Models/Improvise%20a%20Jazz%20Solo%20with%20an%20LSTM%20Network%20-%20v1.ipynb"
+                                target="_blank">View Project</a>
+                        </div>
+    
                     </div>
-                    
+                    <div class="project shadow-large item_dev">
+                        <div class="project-image">
+                            <img src="AI_project_images/BERT.jpg" width="400px" />
+                        </div>
+    
+                        <div style="padding:10px ;">
+                            <h3>Question Answering Using BERT</h3>
+                            <p>
+                                Bi-Directional Encoder Representation Transformer Abbreviated as <b><i>BERT</i></b> is an
+                                Encoder Transformer Networks
+                                proposed by Google in 2018. In this Project my primary objective was to use a pre-trained
+                                BERT model and preprocess the necessary data (such as masking and pairing)
+                                to feed into the model and finally evaluatng the models.
+                            </p>
+                            <a href="https://github.com/Alvi-Rahman/Natural-Language-Processing-Specialization/blob/master/4.%20Natural%20Language%20Processing%20with%20Attention%20Models/Week%203/Question%20Answering%20Using%20Bert.ipynb"
+                                target="_blank">View Project</a>
+                        </div>
+    
+                    </div>
+                    <div class="project shadow-large item_dev">
+                        <div class="project-image">
+                            <img src="AI_project_images/transformerNews.png" width="500px" />
+                        </div>
+    
+                        <div style="padding:10px ;">
+                            <h3>Transformer Summarizer</h3>
+                            <p>
+                                In this project my task was to summerize news articles using self made transformers model.
+                                The dataset used was from <a
+                                    href="https://www.tensorflow.org/datasets/catalog/cnn_dailymail">cnn_dailymail</a>.
+                                Implementing both dot product attention and casual attention I built a complete langiage
+                                model which was used to summerize the texts given as input. Finally using greedy decoding as
+                                evaluation metrics I evaluated the model's performance.
+                            </p>
+                            <a href="https://github.com/Alvi-Rahman/Natural-Language-Processing-Specialization/blob/master/4.%20Natural%20Language%20Processing%20with%20Attention%20Models/Week%202/Text%20Summerization%20Using%20Transformers%20models.ipynb"
+                                target="_blank">View Project</a>
+                        </div>
+    
+                    </div>
+                    <div class="project shadow-large item_dev">
+                        <div class="project-image">
+                            <img src="images/project.jpg" />
+                        </div>
+    
+                        <div style="padding:10px ;">
+                            <h3>Project Name Here</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam
+                                volutpat laoreet
+                                urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
+                                libero. Morbi
+                                dapibus porta quam laoreet placerat.
+                            </p>
+                            <a href="#">View Project</a>
+                        </div>
+    
+                    </div>
+                    <div class="project shadow-large item_dev">
+                        <div class="project-image">
+                            <img src="images/project.jpg" />
+                        </div>
+    
+                        <div style="padding:10px ;">
+                            <h3>Project Name Here</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam
+                                volutpat laoreet
+                                urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
+                                libero. Morbi
+                                dapibus porta quam laoreet placerat.
+                            </p>
+                            <a href="#">View Project</a>
+                        </div>
+    
+                    </div>
                 </div>
-                
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                   
-                    <div>
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet
-                            urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi
-                            dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    
+                <div class="arrows">
+                    <button id="arrowL_dev" class="btn btn-primary" style="background-color: #e4e4ea;">
+                        <i class="fas fa-less-than" style="justify-content: center;"></i>
+                    </button>
+                    <button id="arrowR_dev" class="btn btn-primary" style="background-color: #e4e4ea;">
+                        <i class="fas fa-greater-than"></i>
+                    </button>
                 </div>
-                
+                <div>
+                    <a href="all_ai_projects.html" target="_blank">
+                        <button class="btn btn-success"> See All Projects</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div> -->
-    <!-- End #projects -->
 
-    <div id="skills"  class="background-alt">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-        </ul>
+<div id="development" class="background-alt">
+    <h2 class="heading">Development</h2>
+    <div id="container">
+
+        <div id="row">
+
+            <div class='background-alt'>
+                <ul class="cards">
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="development_images/idesk-logo.png" /></div>
+                            <div class="card_content">
+                                <h2 class="card_title">iDesk360</h2>
+                                <p class="card_text">Customer support system | Social media management tool</p>
+                                <a href="https://idesk360.com" target="_blank"><button class="btn btn-primary">Visit Site</button></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="development_images/GSMRIDERS-01.png"></div>
+                            <div class="card_content">
+                                <h2 class="card_title">GSM Riders</h2>
+                                <p class="card_text">Smart Phones and Quality Technology Review | News | Rumour</p>
+                                <a href="https://gsmriders.com" target="_blank"><button class="btn btn-primary">Visit Site</button></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="development_images/innovative-everyday.png">
+                            </div>
+                            <div class="card_content">
+                                <h2 class="card_title">Innovative Everyday</h2>
+                                <p class="card_text">Technology | Learning | Innovation Blog </p>
+                                <a href="https://www.innovative-everyday.com/" target="_blank"><button class="btn btn-primary">Visit Site</button></a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="AI_project_images/transformerNews.png"></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Transformer Summarizer</h2>
+                                <p class="card_text">Built a transformer language model to summerize news articles</p>
+                                <a href="https://github.com/Alvi-Rahman/Natural-Language-Processing-Specialization/blob/master/4.%20Natural%20Language%20Processing%20with%20Attention%20Models/Week%202/Text%20Summerization%20Using%20Transformers%20models.ipynb"
+                                    target="_blank"><button class="btn btn-primary">View Project</button></a>
+
+                            </div>
+                        </div>
+                    </li> -->
+                    <!-- <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Card Grid Layout</h2>
+                                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout
+                                </p>
+                                <button class="btn btn-primary">View Project</button>
+                            </div>
+                        </div>
+                    </li> -->
+                    <!-- <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Card Grid Layout</h2>
+                                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout
+                                </p>
+                                <button class="btn btn-primary">View Project</button>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+
+
+            <!-- <div>
+                <a href="all_ai_projects.html" target="_blank">
+                    <button class="btn btn-success"> See All Projects</button>
+                </a>
+            </div> -->
+        </div>
     </div>
+</div>
+
+
+    <!-- <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <h3 class="pb-4 text-dark">Language | Framework | Database</h3>
+        <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>PHP</li>
+            <li>Matlab</li>
+            <br>
+            <li>Django</li>
+            <li>Laravel</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <br>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Firebase</li>
+            <li>Sqlite</li>
+            <li>PostgreSQL</li>
+            
+        </ul>
+
+        <h3 class="p-4 text-dark">Data Science | AI | Frameworks</h3>
+        <ul>
+            <li>Machine Learning</li>
+            <li>Data Pre-Processing</li>
+            <li>EDA</li>
+            <li>Deep Learning</li>
+            <li>Computer Vision</li>
+            <li>Sequence Models</li>
+            <li>PHP</li>
+            <li>Matlab</li>
+            <br>
+            <li>Django</li>
+            <li>Laravel</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <br>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Firebase</li>
+            <li>Sqlite</li>
+            <li>PostgreSQL</li>
+        
+        </ul>
+    </div> -->
     <!-- End #skills -->
 
     <div id="contact">
@@ -558,6 +765,36 @@
                 if (index > 0) {
                     index--;
                     $item.animate({ 'left': total });
+                }
+            });
+
+            
+
+            var $item_dev = $('div.item_dev'), //Cache your DOM selector
+                visible_dev = 1, //Set the number of items that will be visible
+                index_dev = 0, //Starting index
+                endIndex_dev = ($item_dev.length / visible_dev) - 1; //End index
+
+            $('button#arrowR_dev').click(function () {
+                // alert($('.item').css('margin-left'));
+                let w = parseInt($('.item_dev').css('width').split('p')[0]);
+                let m = parseInt($('.item_dev').css('margin-left').split('p')[0]);
+                let total = '-=' + (w + m * 2) + 'px'
+                // alert(total)
+                if (index_dev < endIndex_dev) {
+                    index_dev++;
+                    $item_dev.animate({ 'left': total });
+
+                }
+            });
+
+            $('button#arrowL_dev').click(function () {
+                let w = parseInt($('.item_dev').css('width').split('p')[0]);
+                let m = parseInt($('.item_dev').css('margin-left').split('p')[0]);
+                let total = '+=' + (w + m * 2) + 'px'
+                if (index_dev > 0) {
+                    index_dev--;
+                    $item_dev.animate({ 'left': total });
                 }
             });
 
