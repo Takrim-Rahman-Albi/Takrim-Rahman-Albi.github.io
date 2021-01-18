@@ -324,7 +324,7 @@
                                 context of each one. Not only will it learn how to answer questions but it will also know how to ask questions if it needs more info. I preprocessed the MultiWoz dataset
                                 for Reformer inputs and fed it into the pre-trained Reformer Model 
                             </p>
-                            <a href="https://github.com/Alvi-Rahman/Natural-Language-Processing-Specialization/blob/master/4.%20Natural%20Language%20Processing%20with%20Attention%20Models/Week%204/Building%20Chatbots.ipynb" target="_blank">View Project</a>
+                            <a href="https://nbviewer.jupyter.org/github/Alvi-Rahman/Natural-Language-Processing-Specialization/blob/master/4.%20Natural%20Language%20Processing%20with%20Attention%20Models/Week%204/Building%20Chatbots.ipynb" target="_blank">View Project</a>
                         </div>
                         
                     </div>
@@ -339,7 +339,7 @@
                                 Training an DJ Model (LSTM Network) on a given dataset provided bt DeepLearning.ai. The task primarily involved preparing the training inputs and
                                 feeding it into the LSTM model. There were 78 unique values(notes) used to train and build the model.
                             </p>
-                            <a href="https://github.com/Alvi-Rahman/Deep-Learning-Coursera---deeplearning.ai/blob/master/5.%20Sequence%20Models/Improvise%20a%20Jazz%20Solo%20with%20an%20LSTM%20Network%20-%20v1.ipynb" target="_blank">View Project</a>
+                            <a href="https://nbviewer.jupyter.org/github/Alvi-Rahman/Deep-Learning-Full-Version/blob/master/5-Sequence_Models/Week-1/Assignment/Jazz_improvisation_with_LSTM/Improvise-a-Jazz-Solo-with-an-LSTM-Network-v3.ipynb" target="_blank">View Project</a>
                         </div>
                         
                     </div>
@@ -355,7 +355,7 @@
                                 proposed by Google in 2018. In this Project my primary objective was to use a pre-trained BERT model and preprocess the necessary data (such as masking and pairing)
                                 to feed into the model and finally evaluatng the models. 
                             </p>
-                            <a href="https://github.com/Alvi-Rahman/Natural-Language-Processing-Specialization/blob/master/4.%20Natural%20Language%20Processing%20with%20Attention%20Models/Week%203/Question%20Answering%20Using%20Bert.ipynb" target="_blank">View Project</a>
+                            <a href="https://nbviewer.jupyter.org/github/Alvi-Rahman/Natural-Language-Processing-Specialization/blob/master/4.%20Natural%20Language%20Processing%20with%20Attention%20Models/Week%203/Question%20Answering%20Using%20Bert.ipynb" target="_blank">View Project</a>
                         </div>
                         
                     </div>
@@ -370,7 +370,7 @@
                                 In this project my task was to summerize news articles using self made transformers model. The dataset used was from <a href="https://www.tensorflow.org/datasets/catalog/cnn_dailymail">cnn_dailymail</a>.
                                 Implementing both dot product attention and casual attention I built a complete langiage model which was used to summerize the texts given as input. Finally using greedy decoding as evaluation metrics I evaluated the model's performance.
                             </p>
-                            <a href="https://github.com/Alvi-Rahman/Natural-Language-Processing-Specialization/blob/master/4.%20Natural%20Language%20Processing%20with%20Attention%20Models/Week%202/Text%20Summerization%20Using%20Transformers%20models.ipynb" target="_blank">View Project</a>
+                            <a href="https://nbviewer.jupyter.org/github/Alvi-Rahman/Natural-Language-Processing-Specialization/blob/master/4.%20Natural%20Language%20Processing%20with%20Attention%20Models/Week%202/Text%20Summerization%20Using%20Transformers%20models.ipynb" target="_blank">View Project</a>
                         </div>
                         
                     </div>
@@ -385,7 +385,7 @@
                                 In this project, my primary task was to construct a speech dataset and implement an algorithm(GRU) for trigger word detection (sometimes also called keyword detection, or wakeword detection).
                                 My trigger word was "Activate." Every time it hears me saying "activate," it will make a "chiming" sound.
                             </p>
-                            <a href="https://github.com/Alvi-Rahman/Deep-Learning-Full-Version/blob/master/5-Sequence_Models/Week-3/Assignment/Trigger_word_detection/Trigger-word-detection-v1.ipynb" target="_blank">View Project</a>
+                            <a href="https://nbviewer.jupyter.org/github/Alvi-Rahman/Deep-Learning-Full-Version/blob/master/5-Sequence_Models/Week-3/Assignment/Trigger_word_detection/Trigger-word-detection-v1.ipynb" target="_blank">View Project</a>
                         </div>
                         
                     </div>
@@ -400,7 +400,7 @@
                                 Building a Neural Machine Translation (NMT) model to translate human readable dates ("25th of June, 2009") into
                                 machine readable dates ("2009-06-25"). For this task, Bi-Directional LSTM alogn with attension was used.
                             </p>
-                            <a href="https://github.com/Alvi-Rahman/Deep-Learning-Full-Version/blob/master/5-Sequence_Models/Week-3/Assignment/Machine_Translation/Neural-machine-translation-with-attention-v4.ipynb" target="_blank">View Project</a>
+                            <a href="https://nbviewer.jupyter.org/github/Alvi-Rahman/Deep-Learning-Full-Version/blob/master/5-Sequence_Models/Week-3/Assignment/Machine_Translation/Neural-machine-translation-with-attention-v4.ipynb" target="_blank">View Project</a>
                         </div>
                         
                     </div>
@@ -736,12 +736,11 @@
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+            
+                <input type="email" name="_replyto" id="_replyto" placeholder="Your email" required>
+                <textarea name="message" id="_message" placeholder="Your message" required></textarea>
+                <button type="submit" onclick="sendMail()">Send</button>
+            
         </div>
         <!-- End #contact-form -->
     </div>
@@ -859,6 +858,18 @@
 
     </script>
 
+
+<script>
+    function sendMail(){
+        // console.log($('#_replyto').val());
+        // console.log($('#_message').val());
+        
+        var from = $('#_replyto').val()
+        var message = $('#_message').val()
+        window.open('mailto:alvirahmanwork@gmail.com?subject=Query&body='+ message +'&mailfrom='+ from+'');
+        
+    }
+</script>
 
 </body>
 
