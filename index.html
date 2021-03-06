@@ -121,8 +121,8 @@
         <div id="lead-content">
             <img src="images/profile_pic.jpg" alt="Avatar" style="border-radius: 50%; width: 200px;">
             <h1 style="margin-top: 20px;">Takrim Rahman Albi</h1>
-            <h3 style="margin-top: 20px;">Data Scientist and Full Stack Web Developer</h3>
-            <h4 style="display: inline-block; font-weight: 800;">Email : </h4>&nbsp;<h4 style="display: inline-block; color: #FFFFFF; margin-top: 20px;">takrim.rahman.albi@g.bracu.ac.bd</h4>
+            <h2 style="margin-top: 20px; font-size: 2em;">Data Scientist | Software Engineer</h2>
+            <!-- <h4 style="display: inline-block; font-weight: 800;">Email : </h4>&nbsp;<h4 style="display: inline-block; color: #FFFFFF; margin-top: 20px;">takrim.rahman.albi@g.bracu.ac.bd</h4> -->
             <!-- <div>
                 <ul class="social-icons">
                     <li>
@@ -450,8 +450,17 @@
     </div>
 
 <div id="experience">
-    <h2 class="heading">Work Experience</h2>
+    <h2 class="heading">Experience</h2>
     <div id="experience-timeline">
+        <div data-date="August 2020 – Ongoing">
+            <h3>Go Zayaan</h3>
+            <h4>Software Engineer</h4>
+            <p>
+                My Job responsibility primarily comprises of building API using Django and Django Rest Framework.
+                A small part of my job is to use AI for developing user experience.
+            </p>
+        </div>
+    
         <div data-date="August 2020 – Ongoing">
             <h3>Codeware Limited</h3>
             <h4>Data Scientist</h4>
@@ -614,6 +623,16 @@
                 <ul class="cards">
                     <li class="cards_item">
                         <div class="card">
+                            <div class="card_image"><img src="development_images/gz-favicon.png" style="margin:3.5rem"></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Go Zayaan (Backend)</h2>
+                                <p class="card_text">The next generation traveling Platform! Flight | Hotel | Tour | Visa</p>
+                                <a href="https://gozayaan.com" target="_blank"><button class="btn btn-primary">Visit Site</button></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
                             <div class="card_image"><img src="development_images/idesk-logo.png" /></div>
                             <div class="card_content">
                                 <h2 class="card_title">iDesk360</h2>
@@ -640,6 +659,18 @@
                                 <h2 class="card_title">Innovative Everyday</h2>
                                 <p class="card_text">Technology | Learning | Innovation Blog </p>
                                 <a href="https://www.innovative-everyday.com/" target="_blank"><button class="btn btn-primary">Visit Site</button></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="development_images/Octocat.png">
+                            </div>
+                            <div class="card_content">
+                                <h2 class="card_title">Find Out More on My Github</h2>
+                                <p class="card_text">  </p>
+                                <a href="https://github.com/Alvi-Rahman/" target="_blank"><button class="btn btn-primary">Visit
+                                        GitHub</button></a>
                             </div>
                         </div>
                     </li>
@@ -746,7 +777,7 @@
         <h2>Get in Touch</h2>
         <div id="contact-form">
             
-                <input type="email" name="_replyto" id="_replyto" placeholder="Your email" required>
+                <input type="email" name="subject" id="_subject" placeholder="Subject of your Email" required>
                 <textarea name="message" id="_message" placeholder="Your message" required></textarea>
                 <button type="submit" onclick="sendMail()">Send</button>
             
@@ -873,12 +904,44 @@
         // console.log($('#_replyto').val());
         // console.log($('#_message').val());
         
-        var from = $('#_replyto').val()
+        var subject = $('#_subject').val()
         var message = $('#_message').val()
-        window.open('mailto:alvirahmanwork@gmail.com?subject=Query&body='+ message +'&mailfrom='+ from+'');
+        window.open('mailto:alvirahmanwork@gmail.com?subject='+ subject+'&body='+ message +'');
         
     }
 </script>
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendMail() {
+        Email.send("albirahman7@gmail.com",
+                "alvirahmanwork@gmail.com",
+                "Query",
+                "this is the body",
+                { token: "63cb3a19-2684-44fa-b76f-debf422d8b00" })
+                .then(function (message) {
+                alert("mail sent successfully")
+            });
+    }
+</script> -->
+
+<!-- <script>
+    function sendMail() {
+        var from = $('#_replyto').val()
+        var message = $('#_message').val()
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: from,
+            Password: "",
+            To: 'alvirahmanwork@gmail.com',
+            From: from,
+            Subject: "Query",
+            Body: message,
+        })
+            .then(function (message) {
+                alert("mail sent successfully")
+            });
+    }
+</script> -->
 
 </body>
 
