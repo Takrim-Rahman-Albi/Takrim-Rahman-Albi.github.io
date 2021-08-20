@@ -453,7 +453,8 @@ float:left;
 
 .list{
     /* background:grey; */
-    min-width:14000px;
+    /* To be corrected when overflow collaps */
+    min-width:140000px; 
     overflow: hidden;
     float:left;
 }
