@@ -119,3 +119,11 @@ img {
   margin-top: 35px;
   text-align: center;
 }
+
+.btn-card{
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
