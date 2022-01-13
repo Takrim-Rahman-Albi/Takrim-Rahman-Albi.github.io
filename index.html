@@ -1077,13 +1077,15 @@
 
     <div id="contact">
         <h2>Get in Touch</h2>
-        <div id="contact-form">
+        <form id="contact-form"
+              action="https://formspree.io/f/mgedovak"
+              method="POST">
             
-                <input type="email" name="subject" id="_subject" placeholder="Subject of your Email" required>
+                <input type="email" name="_replyto" id="_subject" placeholder="Subject of your Email" required>
                 <textarea name="message" id="_message" placeholder="Your message" required></textarea>
-                <button type="submit" onclick="sendMail()">Send</button>
-            
-        </div>
+<!--                <button type="submit" onclick="sendMail()">Send</button>-->
+                <button type="submit">Send</button>
+        </form>
         <!-- End #contact-form -->
     </div>
     <!-- End #contact -->
