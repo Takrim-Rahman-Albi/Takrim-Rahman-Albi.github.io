@@ -465,10 +465,14 @@ float:left;
     /* background:grey; */
     /* To be corrected when overflow collaps */
     /*min-width:140000px; */
-    overflow: auto;
-    /*display: inline-block;*/
-    white-space: nowrap;
-    float: left;
+    /*float:left;*/
+
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
 }
 
 
@@ -491,11 +495,12 @@ float:left;
     /* background:green; */
     /* width:500px;
     height:150px; */
-    display: inline-block;
     /*width: max-content;*/
     margin:20px 100px;
     /*float:left;*/
-    position:relative;
+    /*display: inline-block;*/
+    /*position:relative;*/
+    flex: 0 0 auto;
 }
 
 

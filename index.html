@@ -294,7 +294,7 @@
 
                 <div class='list background-alt'>
 
-                    <div class="project shadow-large item">
+                    <div class="project shadow-large item ml-3">
                         <div class="project-image">
                             <img src="AI_project_images/heatmap.png" width="400px" alt=""/>
                         </div>
@@ -1312,61 +1312,36 @@
     <script>
         $(document).ready(function () {
 
-
-            var $item = $('div.item'), //Cache your DOM selector
+            let offset = 5;
+            let item = $('div.item'), //Cache your DOM selector
                 visible = 1, //Set the number of items that will be visible
                 index = 0, //Starting index
-                endIndex = ($item.length / visible) - 1; //End index
+                endIndex = (item.length / visible) - 1; //End index
 
             $('button#arrowR').click(function () {
                 // alert($('.item').css('margin-left'));
-                let w = parseInt($('.item').css('width').split('p')[0]);
-                let m = parseInt($('.item').css('margin-left').split('p')[0]);
-                let total = '-=' + (w + m * 2) + 'px'
+                // let item = $('.item');
+                let w = parseInt(item.css('width').split('p')[0]);
+                let ml = parseInt(item.css('margin').split('p')[0]);
+                let mr = parseInt(item.css('margin').split('p')[0]);
+                let total = '-=' + (w + (ml + mr) * offset) + 'px';
                 // alert(total)
                 if (index < endIndex) {
                     index++;
-                    $item.animate({'left': total});
+                    item.animate({'left': total});
 
                 }
             });
 
             $('button#arrowL').click(function () {
-                let w = parseInt($('.item').css('width').split('p')[0]);
-                let m = parseInt($('.item').css('margin-left').split('p')[0]);
-                let total = '+=' + (w + m * 2) + 'px'
+                let item = $('.item');
+                let w = parseInt(item.css('width').split('p')[0]);
+                let ml = parseInt(item.css('margin').split('p')[0]);
+                let mr = parseInt(item.css('margin').split('p')[0]);
+                let total = '+=' + (w + (ml + mr) * offset) + 'px';
                 if (index > 0) {
                     index--;
-                    $item.animate({'left': total});
-                }
-            });
-
-
-            var $item_dev = $('div.item_dev'), //Cache your DOM selector
-                visible_dev = 1, //Set the number of items that will be visible
-                index_dev = 0, //Starting index
-                endIndex_dev = ($item_dev.length / visible_dev) - 1; //End index
-
-            $('button#arrowR_dev').click(function () {
-                // alert($('.item').css('margin-left'));
-                let w = parseInt($('.item_dev').css('width').split('p')[0]);
-                let m = parseInt($('.item_dev').css('margin-left').split('p')[0]);
-                let total = '-=' + (w + m * 2) + 'px'
-                // alert(total)
-                if (index_dev < endIndex_dev) {
-                    index_dev++;
-                    $item_dev.animate({'left': total});
-
-                }
-            });
-
-            $('button#arrowL_dev').click(function () {
-                let w = parseInt($('.item_dev').css('width').split('p')[0]);
-                let m = parseInt($('.item_dev').css('margin-left').split('p')[0]);
-                let total = '+=' + (w + m * 2) + 'px'
-                if (index_dev > 0) {
-                    index_dev--;
-                    $item_dev.animate({'left': total});
+                    item.animate({'left': total});
                 }
             });
 
